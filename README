@@ -1,0 +1,5 @@
+CUDenTV : A CUDA accelerated image denoising library based on Total Variation method.
+---------------------------------------------
+Compile with openCV 2.3
+---------------------------------------------
+g++ -I/usr/include/opencv -lopencv_core -lopencv_highgui -lopencv_ml -lm denoisecolor.cpp
