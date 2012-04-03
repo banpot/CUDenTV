@@ -1,0 +1,26 @@
+=========================================================
+= Robust, fast, and multi-core support image comparison =
+=							=
+= Program and Library by : Banpot Dolwithayakul		=
+=========================================================
+Requirement :
+1. OpenCV-devel 2.3.1+
+2. g++
+3. OpenMP-devel
+
+File :
+1. Library --> imgcomp.h
+2. Main Program --> main.cpp
+
+library format:
+float imgcomp(char* filename1, char* filename2, int CompareValueType)
+
+Predefined constant :
+Constants for CompareValueType : IMGCOMP_PSNR, IMGCOMP_SNR, IMGCOMP_SSIM
+Constants for Output : IMGCOMP_PICNOTEQUAL, IMGCOMP_FILE1FAIL, IMGCOMP_FILE2FAIL
+
+Compile with: 
+g++ -I/usr/include/opencv -lopencv_core -lopencv_highgui -lopencv_ml -lm main.cpp
+
+Example:
+(coming soon)
